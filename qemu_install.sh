@@ -1,5 +1,6 @@
 #!/bin/bash
-cd /srv/vm/qemu
+QEMU=${1:-"/srv/vm"}
+cd $QEMU
 #git remote add qemu git://git.qemu.org/qemu.git
 #git fetch qemu
 git remote add peter https://github.com/xzpeter/qemu.git
